@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tachkil - Gestion de tâches intuitive</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-dark text-gray-100">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-10 bg-dark/90 backdrop-blur-sm border-b border-gray-800">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <img src="./res/logo.png" class="object-cover h-12 w-12" alt="">
+                    <h1 class="text-2xl font-bold">
+                        <span class="text-white">Tach</span><span class="text-primary">Kil</span>
+                    </h1>
+                </div>
+                <a href="#download"
+                    class="bg-primary hover:bg-red-600 text-white font-semibold py-2 px-6 rounded-lg transition duration-300">
+                    Télécharger
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section 1: Hero -->
+    <section class="container mx-auto px-4 py-12 md:py-24">
+        <div class="flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/2 mb-12 lg:mb-0">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-anton mb-6">
+                    <span class="text-white">Tach</span><span class="text-primary">Kil</span>
+                </h1>
+                <p class="text-lg md:text-xl mb-8 text-gray-300 font-opensans leading-relaxed">
+                    L'application de gestion de tâches qui simplifie votre quotidien. Définissez vos tâches, modifiez
+                    les priorités, personnalisez avec des couleurs et retrouvez rapidement ce dont vous avez besoin
+                    grâce à la recherche avancée.
+                </p>
+                <a href="#download"
+                    class="inline-block bg-primary hover:bg-red-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300">
+                    Télécharger maintenant
+                </a>
+            </div>
+            <div class="lg:w-1/2 flex justify-center">
+                <div class="relative max-w-md">
+                    <div class="absolute -top-4 -left-4 w-20 h-20 bg-primary rounded-full opacity-20"></div>
+                    <img src="./res/image.png" alt="Aperçu de l'application TachKil"
+                        class="rounded-xl shadow-lg object-cover w-2/3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: À propos de l'application -->
+    <section class="bg-dark-secondary py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/3 mb-10 lg:mb-0 flex justify-center">
+                    <img src="./res/welcome.png" alt="Aperçu de l'application TachKil"
+                        class="rounded-xl shadow-lg object-cover w-1/2">
+                </div>
+                <div class="lg:w-2/3 lg:pl-16">
+                    <h2 class="text-3xl md:text-4xl font-anton mb-8 section-title">Une application intuitive et
+                        puissante</h2>
+                    <p class="text-lg mb-6 text-gray-300">
+                        TachKil a été conçue pour offrir une expérience utilisateur fluide et efficace dans la gestion
+                        de vos tâches quotidiennes. Avec une interface sombre élégante et des accents de couleur rouges,
+                        l'application est agréable à utiliser même pendant de longues périodes.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+                        <div class="app-card bg-dark p-5 rounded-xl border border-gray-800">
+                            <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-4">
+                                <span class="text-2xl text-primary">✓</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Suivi en temps réel</h3>
+                            <p class="text-gray-400">Marquez vos tâches comme terminées ou en cours, modifiez les
+                                priorités à tout moment.</p>
+                        </div>
+                        <div class="app-card bg-dark p-5 rounded-xl border border-gray-800">
+                            <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-4">
+                                <span class="text-2xl text-primary">🎨</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Personnalisation</h3>
+                            <p class="text-gray-400">Attribuez des couleurs différentes à vos tâches pour une
+                                organisation visuelle optimale.</p>
+                        </div>
+                        <div class="app-card bg-dark p-5 rounded-xl border border-gray-800">
+                            <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-4">
+                                <span class="text-2xl text-primary">🔍</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Recherche rapide</h3>
+                            <p class="text-gray-400">Trouvez instantanément n'importe quelle tâche grâce à notre moteur
+                                de recherche intégré.</p>
+                        </div>
+                        <div class="app-card bg-dark p-5 rounded-xl border border-gray-800">
+                            <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-4">
+                                <span class="text-2xl text-primary">📱</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Multi-plateforme</h3>
+                            <p class="text-gray-400">Disponible sur iOS et Android avec une expérience cohérente sur
+                                tous vos appareils.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Technologies utilisées -->
+    <section class="py-16">
+        <div class="container text-center mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-anton text-center mb-16 section-title">Technologies de développement
+            </h2>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-12 md:space-y-0 md:space-x-24">
+                <div class="flex flex-col items-center justify-center">
+                    <div>
+                        <div class="text-center mb-8">
+                            <img src="./res/flutter.png" class="object-cover w-24" alt="">
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Flutter</h3>
+                    </div>
+                    <p class="text-gray-400 max-w-xs">Framework utilisé pour développer l'application mobile
+                        multiplateforme avec une interface utilisateur fluide et réactive.</p>
+                </div>
+                <div class="flex flex-col items-center justify-center mt-12">
+                    <div class="mb-8">
+                        <img src="./res/sql.png" class="object-cover w-32" alt="">
+                    </div>
+                    <p class="text-gray-400 max-w-xs">Base de données légère et performante pour stocker localement
+                        toutes vos tâches, même sans connexion Internet.</p>
+                </div>
+            </div>
+
+        </div>
+        <p class="text-center mt-16 text-gray-300 max-w-3xl mx-auto text-lg">
+            La combinaison de <span class="text-green-400 font-bold">Flutter</span> et <span
+                class="text-green-400 font-bold">SQLite</span> garantit une application rapide, fiable et offrant
+            une excellente expérience utilisateur, tout en fonctionnant parfaitement hors ligne.
+        </p>
+        <div class="text-center mt-12">
+            <a href="https://github.com/Peughy/tachkil.git"
+                class="bg-black text-center hover:bg-black/85 text-white font-semibold py-6 px-6 rounded-lg transition duration-300">
+                Accedez au code source sur GitHub
+            </a>
+        </div>
+        </div>
+
+    </section>
+
+    <!-- Section 4: Téléchargement -->
+    <section id="download" class="bg-dark-secondary py-16">
+        <div class="container text-center mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-anton text-center mb-6 section-title">Téléchargez TachKil maintenant
+            </h2>
+            <p class="text-center text-gray-300 text-lg mb-12 max-w-2xl mx-auto">
+                Disponible gratuitement sur iOS et Android.<br>Améliorez
+                votre productivité dès aujourd'hui.
+            </p>
+
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-12">
+                <!-- Lien Android -->
+                <a href="https://drive.google.com/file/d/1q3Ju6zYMGvxiQbMpK8QsgXWiF4StYHO0/view?usp=sharing" class="group w-full max-w-sm">
+                    <div
+                        class="app-card bg-dark border border-gray-800 rounded-2xl p-8 flex flex-col items-center hover:border-primary transition duration-300">
+                        <img src="./res/android.png" class="object-cover w-28 mb-8" alt="">
+                        <p class="text-gray-400 text-center mb-6">Vesion Android</p>
+                        <div
+                            class="bg-primary hover:bg-red-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+                            Télécharger pour Android
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Lien iOS -->
+                <a href="#" class="group w-full max-w-sm">
+                    <div
+                        class="app-card bg-dark border border-gray-800 rounded-2xl p-8 flex flex-col items-center hover:border-primary transition duration-300">
+                        <img src="./res/ios.png" class="object-cover w-28 mb-8" alt="">
+                        <p class="text-gray-400 text-center mb-6">Version ios</p>
+                        <div
+                            class="bg-primary hover:bg-red-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+                            Télécharger pour iOS
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark py-12 border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-3">
+                        <img src="./res/logo.png" class="object-cover h-12 w-12" alt="">
+                        <h2 class="text-2xl font-bold">
+                            <span class="text-white">Tach</span><span class="text-primary">Kil</span>
+                        </h2>
+                    </div>
+                    <p class="text-gray-400 mt-4">Gestion de tâches intuitive et efficace</p>
+                </div>
+
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400 mb-2">© 2023 TachKil. Tous droits réservés.</p>
+                    <p class="text-gray-500">Développé avec Flutter et SQLite</p>
+                </div>
+            </div>
+
+            <div class="mt-10 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+                <p>TachKil est une application de gestion de tâches personnelles. Vos données restent stockées
+                    localement sur votre appareil.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Animation simple pour les cartes au défilement
+        document.addEventListener('DOMContentLoaded', function () {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observer les cartes d'application
+            document.querySelectorAll('.app-card').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(card);
+            });
+
+            // Observer les sections
+            document.querySelectorAll('section').forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                observer.observe(section);
+            });
+
+            // Déclencher l'animation initiale
+            setTimeout(() => {
+                document.querySelectorAll('section, .app-card').forEach(el => {
+                    const rect = el.getBoundingClientRect();
+                    if (rect.top < window.innerHeight - 100) {
+                        el.style.opacity = '1';
+                        el.style.transform = 'translateY(0)';
+                    }
+                });
+            }, 300);
+
+            // Lien de téléchargement factice
+            document.querySelectorAll('a[href="#download"]').forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.getElementById('download').scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
